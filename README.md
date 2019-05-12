@@ -5,10 +5,10 @@ The flights-app is a RESTEasy and Spring-boot application which provides RESTful
 
 flights-app-test
 
-The flights-app-test is REST Assured based integration and unit testing project where flights-app is under test. 
+The flights-app-test is a REST Assured based integration and unit testing project where flights-app is under test. 
 
 flights-client
 
-The flights-client is curl commands line and the RESTEasy client which the manual testing and validation client. 
+The flights-client uses curl commands line and the RESTEasy client which applies manual testing and validation clients.
 
 
