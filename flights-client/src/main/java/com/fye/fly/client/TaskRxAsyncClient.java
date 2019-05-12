@@ -61,6 +61,15 @@ public class TaskRxAsyncClient {
     		}
         });
         
+		new Thread(() -> {
+			try {
+				for (int seconds = 3; seconds > 0; seconds--) {
+					Thread.sleep(1000);
+				}
+				client.close();
+			} catch (Exception ignored) {
+			}
+		}).start();
 	}
 
 }

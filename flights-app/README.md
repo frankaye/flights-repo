@@ -39,6 +39,7 @@ https://pkgstore.datahub.io/core/airport-codes/airport-codes_json/data/f32b00372
 
 For above data with around 16MB, it average takes about 12 seconds to load from flights-app application with the above URL. 
 
+the End-Points from http://iatacodes.org is used for additional data testing with api in the rest client
 
 
 

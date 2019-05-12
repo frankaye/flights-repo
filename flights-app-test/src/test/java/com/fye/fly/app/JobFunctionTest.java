@@ -55,8 +55,7 @@ public class JobFunctionTest {
 		Response response = given().header("fly-host","https://api.flightstats.com/flex/airports/docs/v1/lts/samples/Airports_response.json").contentType(ContentType.JSON).when().get("/airports");
 		List<Airport> aList = new ArrayList<>();
 		List<Airport> list = response.then().statusCode(200).extract().body().as(aList.getClass());
-		Object[] gbList = list.stream().filter(p -> p.getCountryCode() == "GB").toArray();
-		Assert.assertTrue(gbList.length > 260, "airports is more than 260");
+		Assert.assertTrue(list.size() > 260, "airports is more than 260");
 	}
 	
 	@Test
